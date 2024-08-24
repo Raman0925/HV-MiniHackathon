@@ -1,0 +1,248 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+.container{
+    width:100% ;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 89px;
+    flex-direction: column;
+ 
+    
+}
+
+.header{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:4px;
+    width:100%
+    
+}
+.header .circle {
+    width: 60px;
+    height: 60px;
+    background: #E84848;
+    border-radius: 9999px;
+}
+.header .title {
+     color: #3C3030;
+     font-family:Iowan Old Style ;
+     font-size: 84px;
+     font-weight: 400;
+     line-height: 117.60px;
+     word-wrap: break-word
+   
+}
+.divider{
+    width: 100%; 
+    height: 100%; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 7px; 
+    display: flex
+}
+.search-container {
+    width: 327px;
+    height: 61px;
+    
+   
+}
+.search-container form {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+   
+   
+    
+}
+.search-container form .search-box{
+    background-image: url(./public/images/search.png);
+    background-repeat: no-repeat;
+    background-position:10px center ;
+    width: 200px;
+    height: 59px;
+    padding-left: 40px;
+    border: 1px solid #3C3030;
+   
+    
+
+}
+
+.search-container form .search-box::placeholder{
+    opacity: 0.61;
+    color: #3C3030;
+    font-size: 20px;
+    font-family: Iowan Old Style;
+    font-weight: 400;
+}
+.go-button{
+    height: 60px;
+    width: 61px;
+    color: #FDFDFA;
+    background-color:  #E84848;
+    font-size: 20px;
+    font-family: Iowan Old Style;
+    font-weight: 400;
+   
+    border-radius: 1px;
+    border: 1px #E84848 solid;
+    
+
+}
+.news-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+
+    
+   
+}
+.news-section .section-title{
+    border: 3px solid #D02424;
+    
+    color: #D02424;
+    font-size: 20px;
+    font-family: Inria Sans;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 28px;
+    word-wrap: break-word;
+    text-align: right;
+}
+.news-section .news-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 96px;
+    
+}
+.news-section .news-items .news-item img {
+    width: 250px;
+    height: 120px;
+}
+
+    
+
+.news-rows{
+    display:flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:80px;
+
+}
+.news-section .news-items .news-rows .news-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.news-section .news-items .news-item .headline {
+    width: 250px;
+    color: #3C3030;
+    font-size: 18px;
+    font-family: Inknut Antiqua;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+.news-section .news-items .news-item .description {
+    width: 250px;
+    opacity: 0.80;
+    color: #3C3030;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.news-section .news-items .news-item .read-more {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    display: flex;
+}
+.news-section .news-items .news-item .read-more .read-text {
+    color: #3C3030;
+    font-size: 16px;
+    font-family: Inria Sans;
+    font-weight: 400;
+    line-height: 22.40px;
+    word-wrap: break-word;
+}
+.news-section .news-items .news-item .read-more .read-link {
+    color: #D02424;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 700;
+    text-decoration: underline;
+    line-height: 22.40px;
+    word-wrap: break-word;
+}
+
+.footer {
+    text-align: center;
+    width: 1440px;
+     border-top: 1px #3C3030 solid;
+    padding-top: 59px;
+}
+
+
+.footer-text{
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    display: inline-flex;
+}
+.footer .footer-text .footer-logo {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2.26px;
+    display: flex;
+}
+.footer .footer-text .footer-logo .logo {
+    color: #3C3030;
+    font-size: 15.10px;
+    font-family: Iowan Old Style;
+    font-weight: 400;
+    line-height: 21.13px;
+    word-wrap: break-word;
+}
+.footer .footer-text .footer-logo .logo-dot {
+    width: 8.30px;
+    height: 8.30px;
+    background: #E84848;
+    border-radius: 9999px;
+}
+
+.footer .footer-text .footer-logo .logo-subtitle {
+    color: #3C3030;
+    font-size: 15.10px;
+    font-family: Iowan Old Style;
+    font-weight: 400;
+    line-height: 21.13px;
+    word-wrap: break-word;
+}
+
+.footer .footer-text .disclaimer {
+    color: #3C3030;
+    font-size: 16px;
+    font-family: Inria Serif;
+    font-weight: 400;
+    line-height: 22.40px;
+    word-wrap: break-word;
+}
+
+
