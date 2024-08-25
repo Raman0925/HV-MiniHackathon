@@ -12,29 +12,24 @@ const textBox = document.getElementById('textBox');
 function handleClick() {
     // Get the current query from the text box
     const query = textBox.value.trim();
-    
-    if (!query) {
-        document.getElementById('news').innerText = 'Please enter a search term.';
-        return;
-    }
-    
-    // Construct the URL
     const URL = `https://newsapi.org/v2/everything?q=${query}&apiKey=${apiKey}`;
+   
     
     // Call the function to fetch and display news
-    console.log(URL);
+    
       fetch(URL)
-      .then(response => {response.json()
-       alert(response)
-      })
+      .then(response => response.json()
+       
+      )
       .then(responseJson => {
         // Get the container element where news items will be appended
         const newsContainer = document.getElementById('news');
-        
+    
         // Check if articles exist
         if (responseJson.articles && responseJson.articles.length > 0) {
           // Clear previous content
           newsContainer.innerHTML = '';
+         
 
           // Map through each article and create HTML
           responseJson.articles.forEach(article => {

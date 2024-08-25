@@ -65,7 +65,7 @@
     
 }
 .search-container form .search-box{
-    background-image: url(./public/images/search.png);
+    background-image: url(./images/search.png);
     background-repeat: no-repeat;
     background-position:10px center ;
     width: 200px;
