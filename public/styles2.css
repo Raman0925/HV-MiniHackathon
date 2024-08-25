@@ -76,6 +76,11 @@
     
 
 }
+.hr{
+    width: 1440px; 
+    height: 0px; 
+    border: 1px #3C3030 solid;
+}
 
 .search-container .form .search-box::placeholder{
     opacity: 0.61;
@@ -124,8 +129,8 @@
 .news-section .news-items{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     gap: 96px;
     
 }
@@ -140,8 +145,8 @@
     display:flex;
     flex-direction: row;
 
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     gap:80px;
 
 }

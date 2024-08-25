@@ -10,9 +10,10 @@ const textBox = document.getElementById('textBox');
 
 
  function  handleClick() {
+   
     // Get the current query from the text box
     const query = textBox.value.trim();
-    const URL = `https://newsapi.org/v2/everything?q=${query}&apiKey=${apiKey}`;
+    const URL = `https://newsapi.org/v2/everything?q=${query}&apiKey=${apiKey}&pageSize=10`;
    
    
     // Call the function to fetch and display news
