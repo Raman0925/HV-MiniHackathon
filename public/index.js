@@ -9,16 +9,18 @@ const textBox = document.getElementById('textBox');
 
 
 
-function handleClick() {
+ function  handleClick() {
     // Get the current query from the text box
     const query = textBox.value.trim();
     const URL = `https://newsapi.org/v2/everything?q=${query}&apiKey=${apiKey}`;
    
-    
+   
     // Call the function to fetch and display news
     
       fetch(URL)
-      .then(response => response.json()
+      .then(response => 
+       
+        response.json()
        
       )
       .then(responseJson => {
@@ -34,6 +36,7 @@ function handleClick() {
           // Map through each article and create HTML
           responseJson.articles.forEach(article => {
             addingNews(article.urlToImage, article.url, article.title, article.description);
+            
           });
         } else {
           newsContainer.innerText = 'No articles found.';
@@ -41,7 +44,7 @@ function handleClick() {
       })
       .catch(error => {
         console.error('Error fetching news:', error);
-        document.getElementById('news').innerText = 'Error fetching news.';
+        document.getElementById('news').innerText = '';
       });
 }
 
